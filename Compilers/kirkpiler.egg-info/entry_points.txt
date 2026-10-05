@@ -1,0 +1,2 @@
+[console_scripts]
+kirkpiler = kirkpiler.cli:main

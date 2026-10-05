@@ -1,0 +1,23 @@
+pin LED = P2 output;
+pin BTN = P3 input;
+
+uart UART0 {
+    tx = P0;
+    rx = P1;
+    baud = 9600;
+}
+
+fn blink(times: int) {
+    let i = 0;
+    while i < times {
+        LED.toggle();
+        wait(100);
+        i = i + 1;
+    }
+}
+
+fn main() {
+    UART0.start();
+    blink(2);
+    UART0.print("done\n");
+}

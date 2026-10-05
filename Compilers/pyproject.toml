@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kirkpiler"
+version = "0.1.0"
+description = "A small compiler for the KirkPiler microcontroller language"
+requires-python = ">=3.10"
+dependencies = ["llvmlite>=0.42"]
+
+[project.scripts]
+kirkpiler = "kirkpiler.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kirkpiler*"]

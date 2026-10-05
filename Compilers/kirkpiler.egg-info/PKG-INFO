@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: kirkpiler
+Version: 0.1.0
+Summary: A small compiler for the KirkPiler microcontroller language
+Requires-Python: >=3.10
+Requires-Dist: llvmlite>=0.42
